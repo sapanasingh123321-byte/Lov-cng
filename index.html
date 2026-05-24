@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <title>lov-cng1219</title>
+    </head>
+<style>
+body{
+  
+  background-image: url('bg.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin:0px;
+  
+  
+}
+  h1{
+    color: white;
+    font-size: 7vh;
+  }
+  .box{
+    height:100%;
+    width: 100%;
+    background-color: #66666681;
+  }
+  details{
+    width: 250px;
+    font-size: 60px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 4px 4px 11px grey;
+  }
+ summary{
+   list-style: none;
+   cursor: pointer;
+   
+ }
+  summary::before{
+    content: " ➕ open ";
+  }
+  details[open] summary::before{
+    content: " ✖️ close ";
+  }
+  button{
+    font-size: 40px;
+    height: 80px;
+    width: 240px;
+    border: none;
+    border-radius: 10px;
+  }
+</style>
+<body><center><div class="box">
+ <h1>Wel-come</h1><h1>to</h1><h1>my web-site</h1>
+ <hr color="white">
+ <br><br><br><br><br><br>
+  <details><summary></summary>
+    <br>
+    <button>About me ❕</button><br><br>
+    <button>Notes 📋</button>
+  </details>
+  
+  
+  
+  </div>
+  </center>
+</body>
+</html>
