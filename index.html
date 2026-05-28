@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <title>lov-cng1219</title>
+    </head>
+    <style>
+    body{
+      margin: 0px;
+      
+    }
+      .menu{
+        height: 100%;
+        width: 120px;
+        border: none;
+        box-shadow: 4px 4px 10px #babecc;
+      }
+      .home{
+        position: absolute;
+        top: 0px;
+        left: 130px;
+        height: 99.5%;
+        width: 70%;
+        
+      }
+            .about{
+        position: absolute;
+        top: 0px;
+        left: 130px;
+        display: none;
+        height: 99.5%;
+        width: 70%;
+        
+      }
+      
+      button{
+        height: 30px;
+        width: 110px;
+        cursor: pointer;
+        font-size: 20px;
+        border: none;
+        background: none;
+      }
+      h1{
+        font-size: 70px;
+        color: #9c5858;
+      }
+      p{
+        
+        font-size: 25px;
+      }
+      
+    </style>
+<body>
+  <div class="menu">
+    <center><h2>MENU 📋</h2></center><hr>
+    <button onclick="home()">Home 🏠</button><br><br>
+    <button onclick="about()">About ❕</button>
+    
+  </div>
+  <div class="home" id="home">
+      <center>
+  <h1><b>WEL-COME TO MY WEB-SITE</b></h1>
+    <hr width="100%">
+      <br><br><br><br><br>
+      <p>⚫   Hello  friends  Welcome to my website! 🌐✨
+Thank you for visiting today 😊<br>
+I hope you enjoy your time here 🌟
+Explore the pages and discover new things 🔍📖
+<br>
+Your support and visit mean a lot to me ❤️
+Have a great experience and come back again! </p>
+      
+      </center></div>
+    <div class="about" id="about">about</div>
+  
+  <script>
+    function home(){
+         document.getElementById("home").style.display = "block";
+         document.getElementById("about").style.display = "none";
+    }
+    
+        function about(){
+         document.getElementById("about").style.display = "block";
+         document.getElementById("home").style.display = "none";
+    }
+    
+    
+  </script>
+</body>
+</html>
