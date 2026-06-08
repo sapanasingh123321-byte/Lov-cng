@@ -1,0 +1,225 @@
+<html>
+  <head>
+    <title>lov-cng1219</title>
+    </head>
+    <style>
+    body{
+      margin: 0px;
+      
+    }
+      .menu{
+        
+        height: 100px;
+        width: 150px;
+        border-radius: 10px;
+        background-color:#f5f5e6ea;
+        border: none;
+        box-shadow: 4px 4px 10px #babecc;
+      }
+      .home{
+        position: absolute;
+        top: 0px;
+        left: 180px;
+        height: 99.5%;
+        width: 70%;
+        
+      }
+            .about{
+        position: absolute;
+        top: 0px;
+        left: 180px;
+      display: none;
+        height: 99.5%;
+        width: 70%;
+        
+      }
+      
+      button{
+        height: 60px;
+        width: 150px;
+        cursor: pointer;
+        font-size: 20px;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 4px 4px 11px #babecc;
+        background: none;
+        background-color:#e6f5f5ea;
+      }
+      .homebtn{
+        height: 60px;
+        width: 150px;
+        cursor: pointer;
+        font-size: 20px;
+        color: red;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 4px 4px 11px #babecc;
+        background: none;
+        background-color:#e6f5f5ea;
+    
+      }
+      .pdf{
+        height: 60px;
+        width: 300px;
+        cursor: pointer;
+        font-size: 20px;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 4px 4px 11px #babecc;
+        background: none;
+        background-color:#e6f5f5ea;
+      
+      }
+      h1{
+        font-size: 70px;
+        color: #9c5858;
+      }
+      p{
+        
+        font-size: 25px;
+      }
+      .profile{
+        background-image: url(lov.jpg);
+        background-size: cover;
+        border-radius: 20px;
+        box-shadow: 4px 4px 11px #babecc;
+        height: 300px;
+        width: 300px;
+      }
+    </style>
+<body>
+
+  <div class="menu">
+    <center><br><br><h2>MENU 📋</h2></center>
+    <br>
+    <button onclick="home()" id="homebtn" class="homebtn">Home 🏠</button><br><br>
+    
+    
+    
+    
+    
+    <button onclick="about()" id="aboutbtn">About ❕</button>  
+    <br><br>
+    
+    <button onclick="more()" id="morebtn">more 💬</button>  
+    
+    
+    
+  </div>
+
+  <div class="home" id="home">
+    lov-cng.vercel.app
+<br><br><br>
+   
+
+      <center>
+  <h1><b>WEL-COME TO MY WEB-SITE</b></h1>
+    <hr width="100%">
+    
+  <img src="Welcome.gif" height="400vh" width="580vh">
+    
+      
+      <p>⚫   Hello  friends  Welcome to my website! 🌐✨
+Thank you for visiting today 😊<br>
+I hope you enjoy your time here 🌟
+Explore the pages and discover new things 🔍📖
+<br>
+Your support and visit mean a lot to me ❤️
+Have a great experience and come back again! </p>
+      <br><br><br>
+
+      
+      
+      
+      
+      </center></div>
+      
+      
+      
+      
+      
+
+    <div class="about" id="about">
+      lov-cng.vercel.app
+
+     
+      <center>
+        <br>
+        <h1> ABOUT PAGE</h1><BR>
+        <hr>
+        <br><br>
+        <div class="profile"></div>
+        <br><br>
+        <p> 👉      Hello everyone! 👋 😀 <br>My name is Lov Singh, and I live in Golbazaar-4, Siraha. I am a student of Class 9, Section K, at Shree Pokhariya Secondary School.<br> This is my web site and i had developed this web site 🔗🌐 </p>
+        
+   <img src="Aero.gif" height="350px" width="400px">
+        
+      
+        
+      </center>
+
+    </div>
+    <br>
+    
+    
+    
+    <!----------------->
+    
+    
+        <div class="about" id="more">
+      lov-cng.vercel.app
+      <center>
+        <br>
+      
+        <hr>
+        <br><br>
+      <button class="pdf"><a href="unit1.pdf" download>download computer all notes pdf (unit-1)</a></button>
+        
+        
+        
+      </center>
+
+    </div>
+  <script>
+    
+    
+    
+    function home(){
+         document.getElementById("home").style.display = "block";
+         document.getElementById("more").style.display = "none";
+         document.getElementById("about").style.display = "none";
+         
+         
+       document.getElementById("homebtn").style.color= "red";
+         document.getElementById("aboutbtn").style.color= "black";  
+     document.getElementById("morebtn").style.color= "black";  
+    }
+    
+        function about(){
+         document.getElementById("about").style.display = "block";
+         document.getElementById("home").style.display = "none";
+         document.getElementById("more").style.display = "none";
+         
+         
+         
+     document.getElementById("homebtn").style.color= "black";
+         document.getElementById("aboutbtn").style.color= "red";  
+         document.getElementById("morebtn").style.color= "black";  
+    }
+    
+    
+            function more(){
+         document.getElementById("about").style.display = "none";
+         document.getElementById("home").style.display = "none";
+         document.getElementById("more").style.display = "block";
+         
+         
+         
+     document.getElementById("homebtn").style.color= "black";
+         document.getElementById("aboutbtn").style.color= "black";  
+         document.getElementById("morebtn").style.color= "red";  
+    }
+    
+  </script>
+</body>
+</html>
